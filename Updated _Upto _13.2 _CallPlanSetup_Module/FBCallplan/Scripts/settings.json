@@ -1,0 +1,48 @@
+{
+    "name":  "CallPlan",
+    "memoryLimit":  "8G",
+    "installApps":  "installApps.zip",
+    "previousApps":  "",
+    "appFolders":  "CallPlan",
+    "testFolders":  "CallPlanTest",
+    "installTestFramework":  true,
+    "installTestLibraries":  true,
+    "installPerformanceToolkit":  false,
+    "doNotSignApps":  true,
+    "enableCodeCop":  false,
+    "enableAppSourceCop":  true,
+    "appSourceCopMandatoryAffixes":  "FDW",
+    "enablePerTenantExtensionCop":  false,
+    "enableUICop":  true,
+    "bcContainerHelperVersion":  "preview",
+    "additionalCountries":  "",
+    "vaultNameForLocal":  "BuildVariables",
+    "defaultTenantHasAllowAppDatabaseWrite":  true,
+    "versions":  [
+                     {
+                         "version":  "ci",
+                         "artifact":  "///current/Base",
+                         "cacheImage":  true,
+                         "CreateRuntimePackages":  true
+                     },
+                     {
+                         "version":  "cidev",
+                         "artifact":  "///current/Base",
+                         "cacheImage":  true,
+                         "CreateRuntimePackages":  true
+                     },
+                     {
+                         "version":  "cidevbatchnext",
+                         "artifact":  "///us/NextMinor/{INSIDERSASTOKEN}",
+                         "CreateRuntimePackages":  true
+                     },
+                     {
+                         "version":  "nextmajor",
+                         "artifact":  "///us/NextMajor/{INSIDERSASTOKEN}"
+                     },
+                     {
+                         "version":  "nextminor",
+                         "artifact":  "///us/NextMinor/{INSIDERSASTOKEN}"
+                     }
+                 ]
+}

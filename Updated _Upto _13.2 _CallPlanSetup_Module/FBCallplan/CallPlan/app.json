@@ -1,0 +1,49 @@
+{
+  "id": "cb11a9c6-8ff2-4f9b-8a50-da686a811c8d",
+  "name": "Aptean Call Plan Food and Beverage",
+  "publisher": "Aptean",
+  "version": "1.0.0.0",
+  "brief": "Aptean Call Plan setup", 
+  "description": "Aptean Call Plan setup",
+  "privacyStatement": "https://www.aptean.com/policy/privacy-policy",
+  "EULA": "https://legal.aptean.com/",
+  "help": "https://www.aptean.com/",
+  "url": "https://www.aptean.com/",
+  "contextSensitiveHelpUrl": "http://docs.foodware365.com",
+  "logo": "./images/Aptean.png",
+  "application": "19.0.0.0",
+  "screenshots": [],
+  "platform": "19.0.0.0",
+  "dependencies": [
+    {
+      "id": "1a06f0da-5a4d-4a2f-bce2-c04530adac17",
+      "name": "Aptean Foundation Layer for Food and Beverage",
+      "publisher": "Aptean",
+      "version": "1.0.0.0"
+    }
+  ],
+  "internalsVisibleTo": [
+      {
+        "id": "979278a7-fd77-4579-96ab-a0687afbc168",
+        "name": "Aptean Call Plan Test",
+        "publisher": "Aptean"        
+      }
+  ],
+  "idRanges": [
+    {
+      "from": 70241756,
+      "to":  70241781
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "target": "Cloud",
+  "runtime": "8.0",
+  "features": [
+      "TranslationFile"
+  ],
+  "applicationInsightsConnectionString": "InstrumentationKey=999c391b-3958-4ff3-b5ad-60b19e68d4e3;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/"
+}
